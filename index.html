@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understand Smarter, Not Harder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">📚 Understand Smarter</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#history">History Chats</a></li>
+      <li><a href="#why">Why Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="tagline">AI Study Assistant</p>
+      <h1>Let's Learn 📚</h1>
+      <p class="subtitle">
+        Understand difficult lecture slides, generate quizzes, and revise confidently with AI.
+      </p>
+
+      <div class="badges">
+        <span>✓ Simple Explanations</span>
+        <span>✓ Practice Questions</span>
+        <span>✓ Self-paced Learning</span>
+      </div>
+
+      <div class="chat-box">
+        <div id="chatMessages" class="chat-messages">
+          <p class="bot-message">
+            Hi! Ask me any topic you do not understand. I will explain it in simple English.
+          </p>
+        </div>
+
+        <div class="chat-input">
+          <input type="text" id="userInput" placeholder="Example: Explain inflation in simple English">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="tools">
+    <h2>What You Can Do</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>📄 Slide Explainer</h3>
+        <p>Breaks dense lecture slides into simple explanations.</p>
+      </div>
+
+      <div class="card">
+        <h3>💬 Ask AI</h3>
+        <p>Ask questions anytime without feeling embarrassed.</p>
+      </div>
+
+      <div class="card">
+        <h3>📝 Quiz Generator</h3>
+        <p>Creates practice questions for revision and exams.</p>
+      </div>
+
+      <div class="card">
+        <h3>🕘 History Chats</h3>
+        <p>Review your past questions and explanations anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="history" class="history">
+    <h2>History Chats</h2>
+    <p>Your previous study questions will appear here.</p>
+
+    <ul id="historyList">
+      <li>No history yet.</li>
+    </ul>
+  </section>
+
+  <section id="why" class="why">
+    <h2>Why This Website?</h2>
+    <p>
+      Many polytechnic students struggle to understand complex modules because slides
+      can be too dense or confusing. Some students also feel shy to ask lecturers questions.
+      This website gives students a safe, self-paced way to learn and revise.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Fifth Harmony | C240 AI Essentials Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

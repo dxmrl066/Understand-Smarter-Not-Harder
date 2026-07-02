@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8fbff;
+  color: #1f2937;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #9333ea;
+}
+
+.hero {
+  min-height: 90vh;
+  width: 100%;
+  padding: 60px 6%;
+  background: linear-gradient(135deg, #e0f2fe, #f3e8ff, #fef3c7);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.tagline {
+  color: #9333ea;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(44px, 6vw, 76px);
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  width: 80%;
+  max-width: 1000px;
+  margin-bottom: 18px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.badges span {
+  background: rgba(255, 255, 255, 0.75);
+  color: #1e3a8a;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 1300px;
+  background: white;
+  padding: 28px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.chat-messages {
+  height: 45vh;
+  min-height: 360px;
+  max-height: 520px;
+  overflow-y: auto;
+  background: #f1f5f9;
+  padding: 18px;
+  border-radius: 18px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.bot-message,
+.user-message {
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  max-width: 90%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.bot-message {
+  background: #dbeafe;
+  color: #1e1b4b;
+}
+
+.user-message {
+  background: #ede9fe;
+  color: #1e1b4b;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  gap: 12px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 18px;
+  border-radius: 15px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+}
+
+.chat-input button {
+  width: 130px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 15px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #1d4ed8;
+}
+
+.tools,
+.history,
+.why {
+  width: 100%;
+  padding: 70px 6%;
+  text-align: center;
+}
+
+.tools h2,
+.history h2,
+.why h2 {
+  font-size: 34px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+.history p {
+  margin-bottom: 20px;
+}
+
+.history ul {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto 0;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+}
+
+.history li {
+  margin-bottom: 10px;
+}
+
+.why {
+  background: #eef2ff;
+}
+
+.why p {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #1e1b4b;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+
+  .chat-messages {
+    height: 350px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+  }
+
+  .chat-input button {
+    width: 100%;
+  }
+}
